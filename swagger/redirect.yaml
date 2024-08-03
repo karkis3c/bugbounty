@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script>alert(document.location="https://bugcrowd.com")</script>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script>window.location="http://www.bugcrowd.com"</script>"></form>
 
   version: production
 basePath: /JSSResource/
