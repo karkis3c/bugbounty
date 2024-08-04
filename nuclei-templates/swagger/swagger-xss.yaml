@@ -1,0 +1,30 @@
+id: swagger-xss
+
+info:
+  name: Swagger XSS
+  author: kaks3c
+  severity: medium
+  tags: xss,p3,swagger
+
+http:
+  - raw:
+      - |
+        @timeout 8s
+        GET /{{payload}} HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0
+        Connection: close
+
+    payloads:
+      payload:
+        - '?url=http://oast.live'
+        - '?configUrl=data:text/html;base64,aHR0cDovL29hc3QubGl2ZQ=='
+
+    stop-at-first-match: true
+    redirects: true
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "Failed to load API definition"
