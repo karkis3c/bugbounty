@@ -1,7 +1,7 @@
 # Command execution POC
 
 1. Log in to the application using `admin`:`admin`.
-2. Go to http://{domain}:4440/project/Identity-Runbook-Automation/command/run?filter=.&filterName=..
+2. Go to [http://{domain}:4440/project/Identity-Runbook-Automation/command/run?filter=.&filterName=..](http://{domain}:4440/project/Identity-Runbook-Automation/command/run?filter=.&filterName=..)
 3. Enter the command `cat /etc/passwd` (for example).
 4. The command execution is successful.
 
