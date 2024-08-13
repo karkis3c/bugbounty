@@ -14,7 +14,7 @@ http:
       - http://{{Hostname}}:4440/j_security_check
     headers:
       Content-Type: application/x-www-form-urlencoded
-    body: j_username=admin&j_password=admin
+    body: j_username={{username}}&j_password={{password}}
 
     payloads:
       username:
