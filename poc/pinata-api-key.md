@@ -24,7 +24,7 @@ curl -X POST "https://api.pinata.cloud/pinning/pinFileToIPFS" \
      -H "pinata_secret_api_key: <your_secret_api_key>" \
      -F file=@/home/user/poc.txt
 ```
-### Vaild Response 
+### Valid Response 
 
 ```
 {
