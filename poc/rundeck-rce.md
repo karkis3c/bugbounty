@@ -1,8 +1,10 @@
 # Command execution POC
 
-1. Log in to the application using `admin`:`admin`.
-2. Go to [http://{domain}:4440/project/Identity-Runbook-Automation/command/run?filter=.&filterName=..](http://{domain}:4440/project/Identity-Runbook-Automation/command/run?filter=.&filterName=..)
-3. Enter the command `cat /etc/passwd` (for example).
-4. The command execution is successful.
+- Log in to the application using `admin`:`admin`.
+- Create a new project or use an existing one (`hostname/menu/home`).
+- Go to: `hostname/project/{projectname}/command/run`.
+- Enter the node name as "`.*`".
+- Enter the command `cat /etc/passwd` (for example).
+- The command execution should be successful.
 
-> ![image](https://github.com/user-attachments/assets/20da8fbc-6471-4158-af9c-0928c1a5f6fd)
+![image](https://github.com/user-attachments/assets/78ebda17-1e08-479d-b003-edb6bf0a3d80)
